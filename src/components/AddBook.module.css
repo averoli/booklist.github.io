@@ -1,0 +1,22 @@
+.form{
+    margin: 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: [labels] auto [controls]  1fr;
+    grid-gap: 5px;
+}
+
+.button{
+    background-color: #7E6567;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 7px;
+}

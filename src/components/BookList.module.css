@@ -1,0 +1,53 @@
+.grid{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "books table"
+    "list list";
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-columns: 45% 55%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    color: #2A2965;
+}
+
+.books{
+    grid-area: books;
+}
+
+.list{
+    grid-area: list;
+    text-align: center;
+    border-collapse: collapse;
+    width: 99%;
+}
+
+.list th, td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.list th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2A2965;
+    color: white;
+}
+
+.field{
+    background: gray;
+    opacity: 70%;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
